@@ -33,7 +33,7 @@ TagLib::MPEG::File.open(audio_path) do |file|
 	if attributes['year'] 				then   tag.year = attributes['year']				 end
 	if attributes['track_number'] then  tag.track = attributes['track_number'] end
 	if attributes['genre'] 				then  tag.genre = attributes['genre']				 end
-	 
+	if attributes['comment'] 			then tag.comment = attributes['comment']     end
 	 #Add artwork
 	 if attributes['artwork']
 		 #Remove existing artwork
